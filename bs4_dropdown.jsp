@@ -5,6 +5,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+.submenu {
+	position: relative;
+}
+
+.submenu .dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top: -6px; /* Adjust to align properly */
+	display: none; /* 기본적으로 숨김 */
+}
+</style>
 <script type="text/javascript">
 $(function(){
 
@@ -16,11 +28,14 @@ $(function(){
 		console.log("닫혔다");
 	});
 	
-	 $('.submenu a').on("click", function(e) {
-         $(this).next('div').toggle();
-         e.stopPropagation();
-         e.preventDefault();
-     });
+	$('.submenu a').on("click", function(e) {
+		$(".child1").hide();
+		$(".child2").hide();
+		$(".child3").hide();
+        	$(this).next('div').toggle();
+        	e.stopPropagation();
+        	e.preventDefault();
+	});
 });
 </script>
 </head>
@@ -38,7 +53,7 @@ $(function(){
 			  <a class="dropdown-item drapdown-toggle" href="#" id="childDropdown1" role="button"
 			   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    자식드롭다운1</a>
-				    <div class="dropdown-menu" aria-labelledby="childDropdown1">
+				    <div class="dropdown-menu child1" aria-labelledby="childDropdown1">
 				      <a class="dropdown-item" href="#">Link 1</a>
 				      <a class="dropdown-item" href="#">Link 2</a>
 				      <a class="dropdown-item" href="#">Link 3</a>
@@ -48,7 +63,7 @@ $(function(){
 			  <a class="dropdown-item drapdown-toggle" href="#" id="childDropdown2" role="button"
 			   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    자식드롭다운2</a>
-				    <div class="dropdown-menu" aria-labelledby="childDropdown2">
+				    <div class="dropdown-menu child2" aria-labelledby="childDropdown2">
 				      <a class="dropdown-item" href="#">Link 1</a>
 				      <a class="dropdown-item" href="#">Link 2</a>
 				      <a class="dropdown-item" href="#">Link 3</a>
@@ -58,14 +73,14 @@ $(function(){
 			  <a class="dropdown-item drapdown-toggle" href="#" id="childDropdown3" role="button"
 			   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    자식드롭다운3</a>
-				    <div class="dropdown-menu" aria-labelledby="childDropdown3">
+				    <div class="dropdown-menu child3" aria-labelledby="childDropdown3">
 				      <a class="dropdown-item" href="#">Link 1</a>
 				      <a class="dropdown-item" href="#">Link 2</a>
 				      <a class="dropdown-item" href="#">Link 3</a>
 				    </div>
 			</div>
 
-	  </div>
+		</div>
 	</div>
 
 	
