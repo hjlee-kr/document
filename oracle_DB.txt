@@ -1,0 +1,26 @@
+오라클데이터 베이스 (SQL)
+- DDL
+drop
+create
+
+- DML
+- CRUD (Create Read Update Delete)
+
+일반게시판 운영쿼리
+1. 리스트
+select no, title, writer, writeDate, hit from board order by no desc;
+
+2. 글보기
+update board set hit = hit + 1 where no = 1;
+select no, title, content, writer, writeDate, hit from board where no = 1;
+
+3. 글쓰기
+insert into board(no, title, content, writer, pw)
+value (board_seq.nextval, '', '', '', '');
+
+4. 글수정
+update board set title='', content='', writer=''
+where no = 1 and pw=''
+
+5. 글삭제
+delete from board where no = 1 and pw='';
