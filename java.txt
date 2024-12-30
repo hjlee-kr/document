@@ -67,6 +67,24 @@ HashMap : key와 value의 쌍으로 저장
 - sendRedirect: 페이지가 변경, forword: 화면이 전환이 안될때
 - return "redirect:전체경로", return "views아래경로/jsp이름"
 
-
-
 <Spring Framework>
+- servlet 기반의 프로젝트를 쉽게 사용하기 위한 프레임워크(폼)
+- DispatcherServlet를 Spring이 대신 처리해 준다.(미리구현되어있다)
+- 어노테이션을 사용하여 쉽게 코딩하게 해준다.
+- 전자정부프레임워크가 Spring을 기반으로 구성되어있다.
+- Lombok 라이브러리 (getter, setter를 자동구성)
+- myBatis (mapper.xml에 sql문을 구성), Mapper interface사용
+
+프로그램을 개발할때
+- 개발환경
+  : 개발언어 (version확인 필수)
+  : 개발툴은?
+- 필요한 라이브러리가 있는지 체크
+- 시간체크(기간)
+- 할수있는것, 없는것 => 되는것 or 안되는것
+- 웹브라우저의 개발자모드를 잘 활용해라.
+  : console.log()
+- tomcat9, tomcat10은 차이가 많이 난다.
+  (javax)  (jakarta) -> servlet 구성 name스페이스가 변경
+
+html 대신에 jsp 사용
