@@ -66,3 +66,40 @@ css 적용의 우선순위
 2. <style></style>
 3. <link> : 외부 css파일
 4. 브라우저 디폴트
+
+셀렉터 {프러퍼티:값;} /* 주석문 */
+
+색표현방법
+- #ABC : R,G,B를 각각 16등분
+- #ABCDEF : R,G,B를 각각 256등분
+- 색이름 : 140개
+
+기본디자인구조 (box)
+- padding : 컨텐츠(텍스트, 이미지등) 와 border 사이의 간격
+- border : 테두리
+- margin : 다른 박스와의 간격
+
+절대배치, 상대배치
+z-index: 값이 클수록 위에 올라온다.
+
+자바스크립트(Javascript) - 동작, 사용자입력 등에 사용 - 동적 웹을 만들때 사용
+- 변수선언 : var, let
+- 상수 : const
+- 사칙연산
+- 조건문 : if~else, switch~case
+- 반복문 : for, while
+- 함수
+function 함수이름(파라메터1,...) {
+    처리내용;
+    return 리턴값; // 없어도 된다.
+}
+- JSON : {key:value, ...} -> 자바의 hashmap, python의 dictionary
+HTML DOM(Document Object Model)
+document.getElementById()
+document.getElementsByTagName()
+document.getElementsByClassName()
+
+- event : onclick, onchange, onselect, onsubmit
+객체.addEventListener("click", 처리함수이름) //on을 뺀 이벤트이름만 사용
+
+결론: 자바스크립트 DOM 조작하기위해 만든 언어이다.
