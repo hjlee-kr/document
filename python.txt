@@ -1,0 +1,60 @@
+python (파이썬)
+- 변수선언문이 없다. 값을 입력하면 자동으로 변수형지정
+- 줄맞춤(들여쓰기 통일)
+
+기본자료형
+- 정수형 : int
+- 실수형 : float
+- 문자열 : str
+- 논리형 : Boolean (True, False) -> 앞글자가 대문자로
+- 리스트 : []
+- 튜플 : ()
+- 딕셔너리 : {} -> JSON과 거의 유사하다.
+- 집합형 : 중복데이터 허용안함
+
+immutable(불변형) / mutable(변경가능)
+immutable : int, float, str, tuple, set
+mutable : 리스트, 딕셔너리
+
+조건문 : if, if~else, if~elif~else
+if 조건:
+    조건이 맞으면 처리
+    조건이 맞으면 처리
+if문 빠져나옴
+
+반복문 : for, while
+while 조건:
+    반복문
+    반복문
+while 빠져나옴
+for i in range(1,5): #1부터 4까지 반복
+    반복문
+    반복문
+for 빠져나옴
+
+함수
+def 함수명 (파라메터):
+    함수내부
+    함수내부
+함수밖
+
+클래스
+class 클래스명:
+    클래스내부
+    클래스내부
+클래스 밖
+
+클래스의 생성자 def __init__(): 으로 구현한다.
+
+외부 파일이나 라이브러리를 가져와서 사용하고 싶을때
+: import
+
+파이썬에서 유용한 라이브러리
+- Requests
+- Selenium
+- Beautifulsoup
+- Pandas : 데이터 처리를 위한 라이브러리
+- Numpy : 계산을 위한
+
+파이썬으로 백엔드를 구현하려면
+- Flask or Django 프레임워크를 사용하면 됩니다.
